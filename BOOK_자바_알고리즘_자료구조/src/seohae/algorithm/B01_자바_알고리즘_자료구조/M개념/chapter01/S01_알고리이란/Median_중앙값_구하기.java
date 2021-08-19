@@ -2,7 +2,7 @@ package seohae.algorithm.B01_자바_알고리즘_자료구조.M개념.chapter01.
 import java.util.Scanner;
 // 3개의 정숫값을 입력하고 중앙값을 구한 다음 출력합니다.
 
-class Median {
+class Median_중앙값_구하기 {
 	static int med3(int a, int b, int c) {
 		if (a >= b)
 			if (b >= c)

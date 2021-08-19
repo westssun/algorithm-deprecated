@@ -2,7 +2,7 @@ package seohae.algorithm.B01_자바_알고리즘_자료구조.M개념.chapter01.
 import java.util.Scanner;
 // 1, 2, …, n의 합을 구합니다.
 
-class SumWhile {
+class SumWhile_반복 {
 	public static void main(String[] args) {
 		Scanner stdIn = new Scanner(System.in);
 

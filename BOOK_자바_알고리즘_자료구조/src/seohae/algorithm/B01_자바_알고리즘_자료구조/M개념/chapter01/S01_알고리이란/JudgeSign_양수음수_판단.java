@@ -2,7 +2,7 @@ package seohae.algorithm.B01_자바_알고리즘_자료구조.M개념.chapter01.
 import java.util.Scanner;
 // 입력한 정숫값이 양수인지 음수인지 0인지 판단합니다.
 
-class JudgeSign {
+class JudgeSign_양수음수_판단 {
 	public static void main(String[] args) {
 		Scanner stdIn = new Scanner(System.in);
 

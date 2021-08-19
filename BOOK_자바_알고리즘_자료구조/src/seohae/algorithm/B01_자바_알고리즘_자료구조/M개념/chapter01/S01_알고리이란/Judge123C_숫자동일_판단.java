@@ -2,7 +2,7 @@ package seohae.algorithm.B01_자바_알고리즘_자료구조.M개념.chapter01.
 import java.util.Scanner;
 // 입력 받은 정숫값의 양수/음수/0을 판단
 
-class Judge123C {
+class Judge123C_숫자동일_판단 {
 	public static void main(String[] args) {
 		Scanner stdIn = new Scanner(System.in);
 

@@ -1,7 +1,7 @@
 package seohae.algorithm.B01_자바_알고리즘_자료구조.M개념.chapter01.S01_알고리이란;
 // 3개의 정숫값 가운데 최댓값을 구하여 출력합니다.
 
-class Max3m {
+class Max3m_최대값_구하기_2 {
 	// a, b, c의 최댓값을 구하여 반환합니다.
 
 	/**
