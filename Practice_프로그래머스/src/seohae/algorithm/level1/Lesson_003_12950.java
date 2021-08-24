@@ -1,4 +1,4 @@
-package level1;
+package seohae.algorithm.level1;
 
 import java.util.Arrays;
 
