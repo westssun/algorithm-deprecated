@@ -9,7 +9,7 @@ import java.util.Stack;
  * 스택
  * https://www.acmicpc.net/problem/10828
  */
-public class Problem_001_10828_2 {
+public class Problem_002_10828_2 {
     static Stack<Integer> stack = new Stack<>();
 
     public static void main(String[] args) throws Exception {
