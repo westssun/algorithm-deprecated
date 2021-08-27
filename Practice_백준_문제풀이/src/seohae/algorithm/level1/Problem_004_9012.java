@@ -14,10 +14,11 @@ public class Problem_004_9012 {
     public static void main(String[] args) throws IOException {
         Scanner in = new Scanner(System.in);
 
-        int T = in.nextInt();
+        int num = in.nextInt();
 
-        for(int i = 0; i < T; i++) {
-            System.out.println(solution(in.next()));	// nextLine()쓰면 안된다.
+        for(int i = 0; i < num; i++) {
+            /* 입력을 할때마다 함수 호출 */
+            System.out.println(solution(in.next()));
         }
     }
 
