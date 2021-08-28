@@ -25,8 +25,8 @@ public class Lesson_026_12906 {
     public int[] solution(int[] arr) {
         int[] answer = new int[arr.length];
 
-        int size = 0;
-        int answerLastVal = 0;
+        int size = 0; /* 마지막 결과에 담을 배열 size */
+        int answerLastVal = 0; /* answer 배열의 마지막 요소 업데이트 */
 
         for (int i = 0; i < arr.length; i++) {
             // 처음 시작
@@ -41,6 +41,7 @@ public class Lesson_026_12906 {
                     answerLastVal = answer[i]; // 마지막 요소 update
                     size++;
                 } else {
+                    /* -1은 배열에 있을 수 없으므로 지우기 위해 -1로 지정 */
                     answer[i] = -1;
                 }
             }
