@@ -3,7 +3,6 @@ package seohae.algorithm.level2;
 import java.util.Arrays;
 
 /**
- * 피보나치 수
  * https://programmers.co.kr/learn/courses/30/lessons/12945
  */
 

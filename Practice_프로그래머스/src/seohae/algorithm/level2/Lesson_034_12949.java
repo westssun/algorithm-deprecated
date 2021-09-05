@@ -3,7 +3,6 @@ package seohae.algorithm.level2;
 import java.util.Arrays;
 
 /**
- * 행렬의 곱셈
  * https://programmers.co.kr/learn/courses/30/lessons/12949
  */
 

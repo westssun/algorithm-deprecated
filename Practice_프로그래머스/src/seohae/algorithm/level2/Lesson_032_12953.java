@@ -1,11 +1,8 @@
 package seohae.algorithm.level2;
 
 /**
- * N개의 최소공배수
  * https://programmers.co.kr/learn/courses/30/lessons/12953
  */
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class Lesson_032_12953 {
     public static void main(String[] args) {
