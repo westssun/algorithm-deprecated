@@ -31,8 +31,9 @@ public class Problem_003_9093_5_통과 {
                     }
 
                     bw.write(ch); // 공백
-                } else
+                } else {
                     stack.push(ch);
+                }
             }
 
             bw.flush();
