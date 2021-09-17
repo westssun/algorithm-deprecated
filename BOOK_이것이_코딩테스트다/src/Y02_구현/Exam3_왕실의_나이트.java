@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Exam3_왕실의_나이트 {
     public static void main(String[] args) {
-
+        /** 해답으로 처리 */
     }
 
     /* 해설 */
