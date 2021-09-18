@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * https://www.acmicpc.net/problem/1260
  */
-public class Problem_007_1260 {
+public class Problem_008_1260 {
     static int graph[][];
     static boolean[] visited;
     static int n; /* 첫째 줄의 정점 개수 */
