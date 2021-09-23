@@ -1,5 +1,7 @@
 package seohae.algorithm.level2;
 
+import java.util.Stack;
+
 /**
  * https://programmers.co.kr/learn/courses/30/lessons/12973
  */
@@ -13,9 +15,23 @@ public class Lesson_049_12973 {
     }
 
     public int solution(String s) {
-        int answer = -1;
+        int answer = 0;
 
+        Stack<Character> stack = new Stack<>();
 
+        for (int i = 0; i < s.length(); i++) {
+            char target = s.charAt(i);
+
+            if (!stack.isEmpty() && target == stack.peek()) {
+                stack.pop();
+            } else {
+                stack.push(target);
+            }
+        }
+
+        if (stack.isEmpty()) {
+            answer = 1;
+        }
 
         return answer;
     }
