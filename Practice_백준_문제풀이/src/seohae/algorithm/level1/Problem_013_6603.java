@@ -16,19 +16,28 @@ public class Problem_013_6603 {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
 
-        String param = sc.nextLine();
+        String param = "";
 
-        k = Integer.parseInt(param.split(" ")[0]);
-        arr = new int[k];
-        visited = new boolean[k];
+        while (true) {
+            param = sc.nextLine();
 
-        /* 집합 S */
-        for (int i = 1; i < k + 1; i++) {
-            arr[i] = Integer.parseInt(param.split(" ")[i]);
+            if (param.equals("0")) {
+                break;
+            }
+
+            k = Integer.parseInt(param.split(" ")[0]);
+
+            arr = new int[k];
+            visited = new boolean[k];
+
+            /* 집합 S */
+            for (int i = 0; i < k; i++) {
+                arr[i] = Integer.parseInt(param.split(" ")[i + 1]);
+            }
+
+            dfs(0, 0);
+            System.out.println();
         }
-
-        dfs(0, 0);
-        System.out.println();
     }
 
     static void dfs(int line,int count) {
