@@ -1,4 +1,4 @@
-package seohae.algorithm.level1;
+package seohae.algorithm.level2;
 
 import java.io.IOException;
 import java.util.Arrays;
