@@ -1,19 +1,17 @@
 package seohae.algorithm.level2;
 
-import java.util.Arrays;
-
 /**
  * https://programmers.co.kr/learn/courses/30/lessons/43165
  */
 
-public class Lesson_052_43165 {
+public class Lesson_053_43165 {
     static int targetValue;
     static int cnt;
     static int[] arr;
     static int[] sign;
 
     public static void main(String[] args) {
-        Lesson_052_43165 lesson = new Lesson_052_43165();
+        Lesson_053_43165 lesson = new Lesson_053_43165();
 
         int[] a = new int[]{1,1,1,1,1};
         System.out.println(lesson.solution(a, 3));
