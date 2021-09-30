@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 /**
  * https://www.acmicpc.net/problem/14225
  */
-public class Problem_014_14225 {
+public class Problem_015_14225 {
     //static을 이용해 공유 변수를 만든다.
     static int N;
     static int S;
