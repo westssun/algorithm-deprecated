@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * https://www.acmicpc.net/problem/14888
  */
-public class Problem_015_14888 {
+public class Problem_016_14888 {
     public static int[] arr;
     static int[] opArr;
     static int N; /* 열 개수 */
@@ -26,18 +26,24 @@ public class Problem_015_14888 {
             opArr[i] = sc.nextInt();
         }
 
-        dfs(1, arr[0]); // 출발 시작
+        dfs(1, arr[0]); // arr[0]를 시작으로 dfs 함수 호출
 
-        Collections.sort(resultList);
+        int max = resultList.stream()
+                .mapToInt(x -> x)
+                .max().getAsInt();
 
-        System.out.println(resultList.get(resultList.size() - 1)); /* 최대값 */
-        System.out.println(resultList.get(0)); /* 최소값 */
+        int min = resultList.stream()
+                .mapToInt(x -> x)
+                .min().getAsInt();
+
+        System.out.println(max); /* 최대값 */
+        System.out.println(min); /* 최소값 */
     }
 
     static void dfs(int value, int sum) {
         for (int i = 0; i < 4; i++) {
             if (opArr[i] != 0) {
-                opArr[i]--; /* 연산자 사용 */
+                opArr[i] = opArr[i] - 1; /* 연산자 사용 */
 
                 if (i == 0) {
                     dfs(value + 1, sum + arr[value]);
@@ -49,11 +55,11 @@ public class Problem_015_14888 {
                     dfs(value + 1, sum / arr[value]);
                 }
 
-                opArr[i]++; /* 다시 롤백 */
+                opArr[i] = opArr[i] + 1; /* 다시 롤백 */
             }
         }
 
-        if (value == N) {
+        if (value == N) { /* 식이 완성되었음 */
             resultList.add(sum);
         }
     }
