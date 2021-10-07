@@ -12,7 +12,8 @@ public class Notion_00001 {
 
         int[][] a = new int[][] { {100,3}, {200,1}, {50,2} };
         int[][] b = new int[][] { {2500,3}, {700,5}};
-        System.out.println(lesson.solution(a));
+        int[][] c = new int[][] { {1500,4}, {500,1}, {50,1}};
+        System.out.println(lesson.solution(c));
     }
 
     public int solution(int[][] arr1) {
@@ -45,10 +46,12 @@ public class Notion_00001 {
             if (target >= (sumA + coinList.get(i))) {
                 sumA += coinList.get(i);
                 coinList.set(i, 0); /* 사용했으므로 0으로 값 변경 */
-            } else {
-                System.out.println("sumA : " + sumA);
-                break;
             }
+            /* 최대한의 모든 동전을 사용하여 target 가까이 가야한다 */
+//            else {
+//                System.out.println("sumB : " + sumB);
+//                break;
+//            }
         }
 
         for (int i = 0; i < coinList.size(); i++) {
@@ -57,10 +60,11 @@ public class Notion_00001 {
                 if (target >= (sumB + coinList.get(i))) {
                     sumB += coinList.get(i);
                     coinList.set(i, 0); /* 사용했으므로 0으로 값 변경 */
-                } else {
-                    System.out.println("sumB : " + sumB);
-                    break;
                 }
+//                else {
+//                    System.out.println("sumB : " + sumB);
+//                    break;
+//                }
             }
         }
 
